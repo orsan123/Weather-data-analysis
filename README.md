@@ -3,11 +3,18 @@
 
 ## Summary
 
-Analysing weather data using Python in Jupyter Notebook to uncover patterns, trends and insights from meteorological measurements.
+Analysis of 8,784+ hourly weather records using Python to uncover meteorological patterns and relationships between key climate variables.
 
 
 
 
+
+## Project Objectives
+
+- Identify relationships between weather variables
+- Analyze seasonal patterns and trends  
+- Understand conditions leading to poor visibility
+- Build foundational data analysis skills with real-world dataset
 ## About the Dataset
 
 Source: Kaggle 
@@ -20,9 +27,10 @@ Key Features: Temperature, Dew Point Temperature, Relative Humidity, Wind Speed 
 Visibility (kmph), Pressure(Kpa), Weather Condition
 ## Data Transformation
 
-- Aggregated data by time periods (daily, monthly averages)
-- Standardized column names and data formats
-- Converted date/time fields to proper datetime objects
+- Aggregated hourly data to daily and monthly averages for trend analysis
+- Standardized column names for consistency across the dataset
+- Converted timestamp strings to proper datetime objects for time series analysis
+- Handled missing values and validated data integrity
 
 
 
@@ -30,47 +38,49 @@ Visibility (kmph), Pressure(Kpa), Weather Condition
 
 ## Analysis & Visualizations
 
-- Daily Temperature Patterns: Analyzed what an average day's temperature looks like
+- **Daily Temperature Patterns:** Analyzed what an average day's temperature looks like
 
-- Seasonal Trends: Examined temperature variations across different seasons
+- **Seasonal Trends:** Examined temperature variations across different seasons
 
-- Weather Factor Correlations: Heatmap showing relationships between all weather variables
+- **Weather Factor Correlations:** Heatmap showing relationships between all weather variables
 
-- Wind Speed Distribution: Pie chart showing percentage of days by wind speed ranges
+- **Wind Speed Distribution:** Pie chart showing percentage of days by wind speed ranges
 
-- Weather Frequency: Bar chart showing how often each weather condition occurred
+- **Weather Frequency:** Bar chart showing how often each weather condition occurred
 
 
 
+
+## Visualizations
+
+![Weather Analysis Dashboard](/visualizations/temp_dew_point_scatter_plot.png)
+
+*Correlation between Temperature and Dew Point Temperature*
 
 ## Key Insights
 
-1) Humidity & Precipitation: Average humidity on rainy days was 83.31%
+1. **Precipitation Indicators**: 83.31% average humidity on rainy days suggests humidity as a reliable rain predictor
+2. **Safety Concerns**: Poor visibility during snow conditions highlights transportation risks
+3. **Meteorological Relationships**: Strong temperature-dew point correlation confirms fundamental atmospheric principles
+4. **Weather Patterns**: Predominance of clear/cloudy days with light winds characterizes the regional climate
+## Technologies
 
-2) Visibility Patterns: Visibility was poorest on days with snow
 
-3) Low Visibility Conditions: When visibility was low:
-
-- Average dew point temperature: -2.10°C
-
-- Average temperature: -0.47°C
-
-- Average relative humidity: 88.76%
-
-4) Strong Correlations: Temperature and dew point show the strongest relationship
-
-5) Wind Patterns: Most days had wind speeds below 15 km/h
-
-6) Sky Conditions: Majority of days were either clear or cloudy
+**Python | Pandas | NumPy | Matplotlib | Seaborn | Jupyter Notebook**
 ## Tools Used
 
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
-
-- Jupyter Notebook in VS Code
-
-- Statistical Analysis libraries
+- **Python Libraries**: Pandas (data manipulation), NumPy (numerical computing), Matplotlib/Seaborn (visualization)
+- **Development**: Jupyter Notebook, VS Code
+- **Analysis**: Statistical analysis, correlation studies, trend analysis
 
 
+## Key Skills Demonstrated
+
+- **Data Cleaning**: Handling datetime conversion and data standardization
+- **Exploratory Data Analysis**: Uncovering patterns and correlations
+- **Data Visualization**: Creating informative charts and heatmaps
+- **Statistical Analysis**: Drawing meaningful insights from numerical data
+- **Problem Solving**: Addressing data quality issues and analytical challenges
 ## Structure
 
 ```
@@ -84,3 +94,6 @@ weather-analysis/
 └── README.md
 
 ```
+## Conclusion
+
+This analysis successfully identified key weather patterns, including the strong temperature-dew point relationship and humidity's role as a rain predictor. The project demonstrates practical data analysis skills and the ability to derive meaningful insights from real-world datasets.
